@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whether Api</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="currentWeather">
+        <div class="input">
+          <h1>Check Weather</h1>
+          <form action="" id="mainForm">
+            <input
+              type="text"
+              name="inputCity"
+              id="inputCity"
+              placeholder="Enter city"
+            />
+            <button type="submit" id="submitBtn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+
+        <div class="output">
+          <h2 id="city"></h2>
+          <div class="contain">
+            <div class="tempContainer">
+              <h3 id="temp"></h3>
+              <p id="feel_like"></p>
+            </div>
+            <div class="tempContainer">
+              <img src="" alt="Nothing to Show" id="image" height="110" />
+              <h5 class="cloud"></h5>
+            </div>
+          </div>
+          <div class="extra">
+            <p id="mainText"></p>
+            <p class="humidity"></p>
+            <p class="wind"></p>
+          </div>
+        </div>
+
+        <div class="errorContainer">
+          <h3 class="errortext">
+            City Not Found Please check the city Name that you Entered
+          </h3>
+          <div class="errorimgContainer">
+            <img src="utility/error.png" height="500" alt="error Occured" />
+          </div>
+        </div>
+        <div class="NoInternetContainer">
+          <h3 class="errortext">
+            No Internet | Please check your Internet connection or reload the
+            browser
+          </h3>
+          <div class="noInternetImgContainer">
+            <img
+              src="utility/noInternet.webp"
+              height="500"
+              alt="error Occured"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="weatherForecast">
+        <div class="todayWeather">
+          <h2>Today Forecast</h2>
+          <div class="TodayWeatherCard">
+            <h5>1:00 AM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>4:00 AM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>7:00 AM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>10:00 AM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>1:00 PM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>4:00 PM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>7:00 PM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+          <div class="TodayWeatherCard">
+            <h5>11:00 PM</h5>
+            <img src="/utility/error.png" alt="weather-icon" height="30" />
+            <p>35°</p>
+          </div>
+        </div>
+
+        <div class="dailyWeather">
+          <h2>7-Day Forecast</h2>
+          <div class="dailyWeatherCard">
+            <h3>Today</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>Sunny</p>
+            <p>35/22</p>
+          </div>
+          <div class="dailyWeatherCard">
+            <h3>Premium</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>need</p>
+            <p>Premium</p>
+          </div>
+          <div class="dailyWeatherCard">
+            <h3>Premium</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>need</p>
+            <p>Premium</p>
+          </div>
+          <div class="dailyWeatherCard">
+            <h3>Premium</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>need</p>
+            <p>Premium</p>
+          </div>
+          <div class="dailyWeatherCard">
+            <h3>Premium</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>need</p>
+            <p>Premium</p>
+          </div>
+          <div class="dailyWeatherCard">
+            <h3>Premium</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>need</p>
+            <p>Premium</p>
+          </div>
+          <div class="dailyWeatherCard">
+            <h3>Premium</h3>
+            <img src="/utility/error.png" alt="weather-icon" height="45" />
+            <p>need</p>
+            <p>Premium</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
